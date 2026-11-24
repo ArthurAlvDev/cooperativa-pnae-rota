@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cooperativa PNAE Rota — OlacDev</title>
+  <meta name="description" content="Cooperativa PNAE Rota: planejador offline de entregas da agricultura familiar para escolas (PNAE) com zero desperdício." />
   <style>
     :root { --bg: #f8fafc; --card: #fff; --text: #0f172a; --muted: #475569; --primary: #15803d; --border: #cbd5e1; }
     * { box-sizing: border-box; }
@@ -14,6 +15,7 @@
     footer { text-align: center; padding: 24px 16px; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--border); }
     footer a { color: var(--primary); font-weight: 600; text-decoration: none; }
   </style>
+  <link rel="canonical" href="https://cooperativa.olacdev.com/" />
 </head>
 <body>
   <main>
@@ -23,6 +25,10 @@
       <button id="run" type="button">Simular Roteiro de Entregas</button>
     </section>
     <section id="out" aria-live="polite"></section>
+      <section class="card" aria-labelledby="institucional-title">
+      <h2 id="institucional-title">Uso Institucional e Demonstração</h2>
+      <p>Aplicação gratuita e offline-first voltada a cooperativas da agricultura familiar, secretarias de educação e nutricionistas do PNAE. Disponível para demonstração e adoção institucional via olacdev.com.</p>
+    </section>
   </main>
   <footer>Made by <a href="https://olacdev.com/" target="_blank" rel="noopener noreferrer">OlacDev</a></footer>
   <script type="module">
@@ -45,5 +51,6 @@
     document.getElementById('run').addEventListener('click', render);
     render();
   </script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
